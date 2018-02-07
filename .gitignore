@@ -1,0 +1,12 @@
+*.d
+*.depend
+
+# Object files
+*.o
+*.obj
+*.elf
+
+# Executables
+*.exe
+*.bin
+*.hex
