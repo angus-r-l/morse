@@ -30,7 +30,6 @@ TaskHandle_t led_task_h;
 /* Private function prototypes -----------------------------------------------*/
 void hardware_init(void);
 void led_task(void);
-extern int get_tick(void);
 
 /** 
   * @brief Main program
@@ -103,7 +102,7 @@ void vApplicationStackOverflowHook(xTaskHandle pxTask, signed char *pcTaskName) 
     parameters are corrupt then inspect pxCurrentTCB to find which was the
     offending task. */
 
-    BSP_LED_Off(LED);
+    BSP_LED_On(LED);
     (void) pxTask;
     (void) pcTaskName;
 
